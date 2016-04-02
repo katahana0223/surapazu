@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface firstViewController : UIViewController
+@interface firstViewController : UIViewController{
+    IBOutlet UIButton *button1;
+    IBOutlet UIButton *button2;
+    IBOutlet UIButton *button3;
+    
+}
+
 
 @end

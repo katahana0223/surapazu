@@ -7,8 +7,10 @@
 //
 
 #import "ChooseViewController.h"
+#import "level0ViewController.h"
 
-@interface ChooseViewController ()
+@interface ChooseViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (weak, nonatomic) UIImage *selectedImage;
 
 @end
 
@@ -18,6 +20,35 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+- (IBAction)choosePhoto:(id)sender {
+    UIImagePickerControllerSourceType sourceType
+    = UIImagePickerControllerSourceTypePhotoLibrary;
+    if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.sourceType = sourceType;
+        picker.delegate = self;
+        [self presentViewController:picker animated:YES completion:NULL];
+    }
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    //⑦
+    UIImage *image = info[UIImagePickerControllerEditedImage];
+    self.selectedImage = image;
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    
+}
+
+
+
+     
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9F79241C4FAD08009FF8D9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B9F79231C4FAD08009FF8D9 /* icon.png */; };
 		2BA28FC71B31832B0020EFE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA28FC61B31832B0020EFE1 /* Foundation.framework */; };
 		2BA28FC91B31832B0020EFE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA28FC81B31832B0020EFE1 /* CoreGraphics.framework */; };
 		2BA28FCB1B31832B0020EFE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA28FCA1B31832B0020EFE1 /* UIKit.framework */; };
@@ -21,6 +22,17 @@
 		2BA28FE81B31832B0020EFE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA28FCA1B31832B0020EFE1 /* UIKit.framework */; };
 		2BA28FF01B31832B0020EFE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BA28FEE1B31832B0020EFE1 /* InfoPlist.strings */; };
 		2BA28FF21B31832B0020EFE1 /* surapazuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA28FF11B31832B0020EFE1 /* surapazuTests.m */; };
+		2BA460151BFC756900966C5C /* level0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA460141BFC756900966C5C /* level0ViewController.m */; };
+		2BA460181BFC773B00966C5C /* level2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA460171BFC773B00966C5C /* level2ViewController.m */; };
+		2BD68C9A1C6A0AAF00BC9438 /* surapazu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68C991C6A0AAF00BC9438 /* surapazu.png */; };
+		2BD68C9C1C6B4EBC00BC9438 /* 3　３.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68C9B1C6B4EBC00BC9438 /* 3　３.png */; };
+		2BD68C9E1C6B4F2500BC9438 /* 4-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68C9D1C6B4F2500BC9438 /* 4-4.png */; };
+		2BD68CA01C6B4F3300BC9438 /* 5-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68C9F1C6B4F3300BC9438 /* 5-5.png */; };
+		2BD68CA31C6B555700BC9438 /* firstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD68CA21C6B555700BC9438 /* firstViewController.m */; };
+		2BD68CA61C7477C600BC9438 /* ChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD68CA51C7477C600BC9438 /* ChooseViewController.m */; };
+		2BD68CA81C74876700BC9438 /* 虫.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68CA71C74876700BC9438 /* 虫.png */; };
+		2BD68CAA1C74891A00BC9438 /* 虫眼鏡.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68CA91C74891A00BC9438 /* 虫眼鏡.png */; };
+		2BD68CAC1C748AB800BC9438 /* 戻る！！.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68CAB1C748AB800BC9438 /* 戻る！！.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B9F79231C4FAD08009FF8D9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2BA28FC31B31832B0020EFE1 /* surapazu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = surapazu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA28FC61B31832B0020EFE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BA28FC81B31832B0020EFE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +66,21 @@
 		2BA28FED1B31832B0020EFE1 /* surapazuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "surapazuTests-Info.plist"; sourceTree = "<group>"; };
 		2BA28FEF1B31832B0020EFE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2BA28FF11B31832B0020EFE1 /* surapazuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = surapazuTests.m; sourceTree = "<group>"; };
+		2BA460131BFC756900966C5C /* level0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = level0ViewController.h; sourceTree = "<group>"; };
+		2BA460141BFC756900966C5C /* level0ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = level0ViewController.m; sourceTree = "<group>"; };
+		2BA460161BFC773B00966C5C /* level2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = level2ViewController.h; sourceTree = "<group>"; };
+		2BA460171BFC773B00966C5C /* level2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = level2ViewController.m; sourceTree = "<group>"; };
+		2BD68C991C6A0AAF00BC9438 /* surapazu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = surapazu.png; sourceTree = "<group>"; };
+		2BD68C9B1C6B4EBC00BC9438 /* 3　３.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3　３.png"; sourceTree = "<group>"; };
+		2BD68C9D1C6B4F2500BC9438 /* 4-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-4.png"; sourceTree = "<group>"; };
+		2BD68C9F1C6B4F3300BC9438 /* 5-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5-5.png"; sourceTree = "<group>"; };
+		2BD68CA11C6B555700BC9438 /* firstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firstViewController.h; sourceTree = "<group>"; };
+		2BD68CA21C6B555700BC9438 /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstViewController.m; sourceTree = "<group>"; };
+		2BD68CA41C7477C600BC9438 /* ChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseViewController.h; sourceTree = "<group>"; };
+		2BD68CA51C7477C600BC9438 /* ChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseViewController.m; sourceTree = "<group>"; };
+		2BD68CA71C74876700BC9438 /* 虫.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "虫.png"; sourceTree = "<group>"; };
+		2BD68CA91C74891A00BC9438 /* 虫眼鏡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "虫眼鏡.png"; sourceTree = "<group>"; };
+		2BD68CAB1C748AB800BC9438 /* 戻る！！.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "戻る！！.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +110,7 @@
 		2BA28FBA1B31832B0020EFE1 = {
 			isa = PBXGroup;
 			children = (
+				2BD68C991C6A0AAF00BC9438 /* surapazu.png */,
 				2BA28FCC1B31832B0020EFE1 /* surapazu */,
 				2BA28FEB1B31832B0020EFE1 /* surapazuTests */,
 				2BA28FC51B31832B0020EFE1 /* Frameworks */,
@@ -112,11 +141,26 @@
 		2BA28FCC1B31832B0020EFE1 /* surapazu */ = {
 			isa = PBXGroup;
 			children = (
+				2BD68CAB1C748AB800BC9438 /* 戻る！！.png */,
+				2BD68CA91C74891A00BC9438 /* 虫眼鏡.png */,
+				2BD68CA71C74876700BC9438 /* 虫.png */,
+				2BD68C9F1C6B4F3300BC9438 /* 5-5.png */,
+				2BD68C9D1C6B4F2500BC9438 /* 4-4.png */,
+				2BD68C9B1C6B4EBC00BC9438 /* 3　３.png */,
+				2B9F79231C4FAD08009FF8D9 /* icon.png */,
 				2BA28FD51B31832B0020EFE1 /* AppDelegate.h */,
 				2BA28FD61B31832B0020EFE1 /* AppDelegate.m */,
-				2BA28FD81B31832B0020EFE1 /* Main.storyboard */,
+				2BD68CA11C6B555700BC9438 /* firstViewController.h */,
+				2BD68CA21C6B555700BC9438 /* firstViewController.m */,
+				2BD68CA41C7477C600BC9438 /* ChooseViewController.h */,
+				2BD68CA51C7477C600BC9438 /* ChooseViewController.m */,
+				2BA460131BFC756900966C5C /* level0ViewController.h */,
+				2BA460141BFC756900966C5C /* level0ViewController.m */,
 				2BA28FDB1B31832B0020EFE1 /* ViewController.h */,
 				2BA28FDC1B31832B0020EFE1 /* ViewController.m */,
+				2BA460161BFC773B00966C5C /* level2ViewController.h */,
+				2BA460171BFC773B00966C5C /* level2ViewController.m */,
+				2BA28FD81B31832B0020EFE1 /* Main.storyboard */,
 				2BA28FDE1B31832B0020EFE1 /* Images.xcassets */,
 				2BA28FCD1B31832B0020EFE1 /* Supporting Files */,
 			);
@@ -228,9 +272,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD68CA81C74876700BC9438 /* 虫.png in Resources */,
+				2BD68CAC1C748AB800BC9438 /* 戻る！！.png in Resources */,
+				2BD68C9C1C6B4EBC00BC9438 /* 3　３.png in Resources */,
+				2BD68CAA1C74891A00BC9438 /* 虫眼鏡.png in Resources */,
+				2BD68CA01C6B4F3300BC9438 /* 5-5.png in Resources */,
+				2B9F79241C4FAD08009FF8D9 /* icon.png in Resources */,
+				2BD68C9A1C6A0AAF00BC9438 /* surapazu.png in Resources */,
 				2BA28FDF1B31832B0020EFE1 /* Images.xcassets in Resources */,
 				2BA28FD11B31832B0020EFE1 /* InfoPlist.strings in Resources */,
 				2BA28FDA1B31832B0020EFE1 /* Main.storyboard in Resources */,
+				2BD68C9E1C6B4F2500BC9438 /* 4-4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA460181BFC773B00966C5C /* level2ViewController.m in Sources */,
+				2BD68CA31C6B555700BC9438 /* firstViewController.m in Sources */,
+				2BA460151BFC756900966C5C /* level0ViewController.m in Sources */,
+				2BD68CA61C7477C600BC9438 /* ChooseViewController.m in Sources */,
 				2BA28FDD1B31832B0020EFE1 /* ViewController.m in Sources */,
 				2BA28FD71B31832B0020EFE1 /* AppDelegate.m in Sources */,
 				2BA28FD31B31832B0020EFE1 /* main.m in Sources */,
@@ -379,6 +435,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "surapazu/surapazu-Prefix.pch";
 				INFOPLIST_FILE = "surapazu/surapazu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +449,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "surapazu/surapazu-Prefix.pch";
 				INFOPLIST_FILE = "surapazu/surapazu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +514,7 @@
 				2BA28FF71B31832B0020EFE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BA28FF81B31832B0020EFE1 /* Build configuration list for PBXNativeTarget "surapazuTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +523,7 @@
 				2BA28FFA1B31832B0020EFE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

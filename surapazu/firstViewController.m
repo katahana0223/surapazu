@@ -16,7 +16,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    //3つのボタンの背景に使う色
+    UIColor *color = [UIColor colorWithRed:116/255.0 green:186/255.0 blue:208/155.0 alpha:1.0];
+    
+   //背景の色を"color"にする
+    button1.backgroundColor = color;
+    button2.backgroundColor = color;
+    button3.backgroundColor = color;
+    
+    //３つのボタンの文字に使う色
+    UIColor *mojiColor = [UIColor whiteColor];
+    
+    //文字の色を指定する
+    [button1 setTitleColor:mojiColor forState:UIControlStateNormal ];
+    [button2 setTitleColor:mojiColor forState:UIControlStateNormal ];
+    [button3 setTitleColor:mojiColor forState:UIControlStateNormal ];
+    
+    //フォントとサイズ
+    UIFont *font  = [UIFont fontWithName:@"スマートフォンUI" size:25];
+    
+    //フォントとサイズを指定
+    button1.titleLabel.font = font;
+    button2.titleLabel.font = font;
+    button3.titleLabel.font = font;
+    
+    
+    //NavoigationVarの色を変える
+    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:116/255.0 green:186/255.0 blue:208/155.0 alpha:1.0];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChooseViewController.h"
 
 @interface level0ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImage *image;
+
 
 @end
