@@ -7,6 +7,7 @@
 //
 
 #import "level0ViewController.h"
+#import "AppDelegate.h"
 static NSInteger const kNumberOfRows = 3;
 static NSInteger const kNumberOfColumns = 3;
 static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
@@ -45,6 +46,8 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view.
     //分割した画像を表示するためのビューを格納する配列
     //11
@@ -67,15 +70,16 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.mainView.bounds];
     [self.mainView addSubview:imageView];
     self.imageView = imageView;
+    
+    [self giveMeImage];
 }
 
-//⑦
-- (void)imagePickerController:(UIImagePickerController *)picker
-didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
+- (void)giveMeImage{
+    AppDelegate *appDelegete = [[UIApplication sharedApplication] delegate];
     
-    //⑦
-    UIImage *image = info[UIImagePickerControllerEditedImage];
+    
+    UIImage *image = appDelegete.selectedImage;
+    NSLog(appDelegete.selectedImage.description);
     self.imageView.image = image;
     
     //分割したピースの幅と高さを計算
@@ -112,9 +116,9 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     self.StartButton.hidden = NO;
     
     //UIImagePickerControllerを閉じる
-    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+    
 }
-
 
 
 

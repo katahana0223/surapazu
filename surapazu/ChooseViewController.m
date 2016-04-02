@@ -8,9 +8,12 @@
 
 #import "ChooseViewController.h"
 #import "level0ViewController.h"
+#import "AppDelegate.h"
+#import "firstViewController.h"
 
 @interface ChooseViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) UIImage *selectedImage;
+
 
 @end
 
@@ -21,23 +24,44 @@
     // Do any additional setup after loading the view.
 }
 
+//画像選ぶボタン
 - (IBAction)choosePhoto:(id)sender {
-    UIImagePickerControllerSourceType sourceType
+    //⑥
+    //アルバムを開く
+    UIImagePickerController *controller = [[UIImagePickerController alloc]init];
+    controller.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    controller.allowsEditing = YES;
+    controller.delegate = self;
+    [self presentViewController:controller animated:YES completion:nil];
+    
+    
+
+    /*UIImagePickerControllerSourceType sourceType
     = UIImagePickerControllerSourceTypePhotoLibrary;
     if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.sourceType = sourceType;
         picker.delegate = self;
         [self presentViewController:picker animated:YES completion:NULL];
-    }
+    }*/
 }
 
+//写真を選択した時に呼ばれる
 - (void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    //⑦
+    //えらんだ画像をimageに入れる
     UIImage *image = info[UIImagePickerControllerEditedImage];
-    self.selectedImage = image;
+    
+    AppDelegate *appDelegete = [[UIApplication sharedApplication] delegate];
+    appDelegete.selectedImage = image;
+    
+    //UIImagePickerControllerを閉じる
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+    firstViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"first"];
+    
+    [self presentViewController:vc animated:YES completion:nil];
     
 }
 

@@ -38,7 +38,7 @@
         <!--First View Controller-->
         <scene sceneID="1Ow-Qz-PSi">
             <objects>
-                <viewController id="3W3-7S-Hoq" customClass="firstViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="first" id="3W3-7S-Hoq" customClass="firstViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A4e-5Y-TPh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qIA-HP-Bkn" kind="push" id="UaO-Df-xr1"/>
+                                    <segue destination="qIA-HP-Bkn" kind="modal" id="LDT-3a-LNP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VYk-s2-Goo">
@@ -60,7 +60,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5em-dB-6qK" kind="push" id="UFR-bH-Zqb"/>
+                                    <segue destination="5em-dB-6qK" kind="modal" id="UFR-bH-Zqb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZYe-TR-Cci">
@@ -70,7 +70,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dWe-E7-1Vb" kind="push" id="84F-82-3Xy"/>
+                                    <segue destination="dWe-E7-1Vb" kind="modal" id="84F-82-3Xy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2h-iC-EQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362" y="-595"/>
+            <point key="canvasLocation" x="894" y="-595"/>
         </scene>
         <!--Level2 View Controller-->
         <scene sceneID="z0J-5k-mz1">
@@ -240,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mS5-7p-dMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="-1208"/>
+            <point key="canvasLocation" x="1383" y="-1208"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0GK-i0-oYa">
@@ -285,7 +285,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あはは" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phd-3K-mHz">
-                                <rect key="frame" x="133" y="89" width="67" height="15"/>
+                                <rect key="frame" x="112" y="44" width="132" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -323,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yw-Z6-OSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="-550"/>
+            <point key="canvasLocation" x="1353" y="-550"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cIl-3Y-q1R">
@@ -337,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gtB-sl-o3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3020" y="-595"/>
+            <point key="canvasLocation" x="3552" y="-595"/>
         </scene>
         <!--Choose View Controller-->
         <scene sceneID="pYf-sq-Vf5">
@@ -361,32 +361,28 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZRe-dD-mCO"/>
-                    <connections>
-                        <segue destination="Ou5-P2-id9" kind="push" id="ArR-d4-nrZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDh-vg-hgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-582" y="-731"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="ytR-Dp-fOd">
+        <scene sceneID="Zb8-ub-Id5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ou5-P2-id9" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tkU-G7-c4A" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="24F-Rc-d3N"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ulI-yn-1Vv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3zj-bm-sub">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="3W3-7S-Hoq" kind="relationship" relationship="rootViewController" id="dKw-gE-o1A"/>
+                        <segue destination="3W3-7S-Hoq" kind="relationship" relationship="rootViewController" id="UBH-be-D2R"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="URK-Jv-h5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJG-gS-4p7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="-595"/>
+            <point key="canvasLocation" x="362" y="-595"/>
         </scene>
     </scenes>
     <resources>
