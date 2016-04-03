@@ -1,0 +1,6 @@
+framework module AURUnlockSlider {
+  umbrella header "AURUnlockSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}
