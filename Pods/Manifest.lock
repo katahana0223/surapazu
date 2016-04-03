@@ -1,0 +1,10 @@
+PODS:
+  - AURUnlockSlider (0.1.1)
+
+DEPENDENCIES:
+  - AURUnlockSlider
+
+SPEC CHECKSUMS:
+  AURUnlockSlider: 7e51989f52789f28608b0904c590347918cbaf40
+
+COCOAPODS: 0.39.0
