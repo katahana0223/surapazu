@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface level2ViewController : UIViewController
+@interface level2ViewController : UIViewController{
+    IBOutlet UIButton *start3ImageButton;
+
+}
 
 @end

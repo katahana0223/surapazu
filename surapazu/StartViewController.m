@@ -8,6 +8,7 @@
 
 #import "StartViewController.h"
 #import "AURUnlockSlider-Swift.h"
+#import "ChooseViewController.h"
 
 @interface StartViewController () <AURUnlockSliderDelegate>
 
@@ -19,23 +20,32 @@
     [super viewDidLoad];
     
     AURUnlockSlider *unlockSlider = [[AURUnlockSlider alloc] init];
-    unlockSlider.frame = CGRectMake(50, 0, self.view.frame.size.width-30, 50);
-    unlockSlider.center = CGPointMake(self.view.frame.size.width/2, 50);
+    unlockSlider.frame = CGRectMake(50, 0, self.view.frame.size.width-40, 50);
+    unlockSlider.center = CGPointMake(self.view.frame.size.width/2, 200);
     unlockSlider.delegate = self;
     
     //テキストの色
-    unlockSlider.sliderTextColor = [UIColor whiteColor];
+    unlockSlider.sliderTextColor = [UIColor colorWithRed:1 green: 1 blue:1.0 alpha:1.0];
     //テキスト
-    unlockSlider.sliderText = @"スライド";
+    unlockSlider.sliderText = @"> Slide to Start";
+    //フォント
+    unlockSlider.sliderTextFont = [UIFont fontWithName:@"HelveticaNeue-Thin"size:20];
     //スライダーの色
-    unlockSlider.sliderColor = [UIColor redColor];
+    unlockSlider.sliderColor = [UIColor clearColor];
     //スライダー背景の色
-    unlockSlider.sliderBackgroundColor = [UIColor blueColor];
+    unlockSlider.sliderBackgroundColor = [UIColor clearColor];
     
     
     
     [self.view addSubview:unlockSlider];
 
+}
+
+//スライドされた時
+- (void) unlockSliderDidUnlock: (AURUnlockSlider *)slider {
+    ChooseViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"happyhappyme"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {

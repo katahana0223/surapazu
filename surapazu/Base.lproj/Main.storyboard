@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Rf8-50-gNs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Rf8-50-gNs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,14 +9,26 @@
         <scene sceneID="NWY-99-DBD">
             <objects>
                 <viewController id="Rf8-50-gNs" customClass="StartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jch-ld-MtB"/>
+                        <viewControllerLayoutGuide type="bottom" id="poq-5a-69K"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6gp-80-7fr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surapazu.png" id="BKE-sN-ybw">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ocM-yN-9ye">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="te.png" translatesAutoresizingMaskIntoConstraints="NO" id="A2n-lc-GxL">
+                                        <rect key="frame" x="2" y="208" width="316" height="316"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MOJI.png" translatesAutoresizingMaskIntoConstraints="NO" id="VLq-ko-RmD">
+                                        <rect key="frame" x="40" y="40" width="240" height="85"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44649543845315776" green="0.73716809640522862" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -29,13 +41,16 @@
         <scene sceneID="1Ow-Qz-PSi">
             <objects>
                 <viewController storyboardIdentifier="first" id="3W3-7S-Hoq" customClass="firstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Avt-Ju-3YJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="eRR-2Z-I4x"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="A4e-5Y-TPh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="T5O-hs-Uoi">
-                                <rect key="frame" x="44" y="245" width="232" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5O-hs-Uoi">
+                                <rect key="frame" x="51" y="245" width="220" height="78"/>
                                 <state key="normal" title="２" image="4-4.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -43,9 +58,8 @@
                                     <segue destination="qIA-HP-Bkn" kind="modal" id="LDT-3a-LNP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VYk-s2-Goo">
-                                <rect key="frame" x="44" y="93" width="232" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYk-s2-Goo">
+                                <rect key="frame" x="50" y="106" width="220" height="78"/>
                                 <state key="normal" title="１" image="3　３.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -53,9 +67,12 @@
                                     <segue destination="5em-dB-6qK" kind="modal" id="UFR-bH-Zqb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZYe-TR-Cci">
-                                <rect key="frame" x="44" y="400" width="232" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dz8-qJ-UlE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <color key="backgroundColor" red="0.44705882352941173" green="0.73725490196078436" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYe-TR-Cci">
+                                <rect key="frame" x="50" y="385" width="220" height="80"/>
                                 <state key="normal" image="5-5.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -76,37 +93,19 @@
         <scene sceneID="z0J-5k-mz1">
             <objects>
                 <viewController id="dWe-E7-1Vb" customClass="level2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4It-EQ-MJq"/>
+                        <viewControllerLayoutGuide type="bottom" id="BGh-Sw-6QZ"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mCr-Do-gVt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3GK-tE-zjb">
-                                <rect key="frame" x="53" y="466" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="画像選択">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="performChooseImageButton:" destination="dWe-E7-1Vb" eventType="touchUpInside" id="KYe-7M-XkJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Saa-h8-6TI">
-                                <rect key="frame" x="197" y="466" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="スタート">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="performStartButtonAction:" destination="dWe-E7-1Vb" eventType="touchUpInside" id="0fX-3g-S5t"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" id="X87-Me-xkS">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X87-Me-xkS">
                                 <rect key="frame" x="0.0" y="124" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rhv-Vf-Num">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhv-Vf-Num">
                                         <rect key="frame" x="-67" y="36" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -114,13 +113,29 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あはは" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BjP-w5-QVj">
-                                <rect key="frame" x="128" y="90" width="83" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2W-p1-h1u">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjP-w5-QVj">
+                                        <rect key="frame" x="92" y="9" width="137" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44673713240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Saa-h8-6TI">
+                                <rect key="frame" x="100" y="473" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.38039215686274508" green="0.68627450980392157" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="スタート">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performStartButtonAction:" destination="dWe-E7-1Vb" eventType="touchUpInside" id="0fX-3g-S5t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -146,8 +161,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="StartButton" destination="Saa-h8-6TI" id="oGh-2T-wH7"/>
-                        <outlet property="chooseImageButton" destination="3GK-tE-zjb" id="tyF-4a-TOO"/>
                         <outlet property="mainView" destination="X87-Me-xkS" id="qKw-b7-5w7"/>
+                        <outlet property="start3ImageButton" destination="Saa-h8-6TI" id="JDY-GG-R76"/>
                         <outlet property="timeLabel" destination="BjP-w5-QVj" id="UEe-1c-OqN"/>
                     </connections>
                 </viewController>
@@ -159,13 +174,33 @@
         <scene sceneID="QQx-IC-YZX">
             <objects>
                 <viewController id="5em-dB-6qK" customClass="level0ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wyx-Tw-rqA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jyn-we-V3k"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bAj-r8-Fcs" customClass="leve">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EmG-ZE-Lm1">
-                                <rect key="frame" x="198" y="497" width="68" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaf-Ph-6g5">
+                                <rect key="frame" x="0.0" y="125" width="320" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5I-qT-iey">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGp-23-26q">
+                                        <rect key="frame" x="96" y="8" width="129" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44673713240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmG-ZE-Lm1">
+                                <rect key="frame" x="101" y="463" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.38039215686274508" green="0.68627450980392157" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="スタート">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -174,30 +209,6 @@
                                     <action selector="performStartButtonAction:" destination="5em-dB-6qK" eventType="touchUpInside" id="dBU-3W-ing"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DUe-2J-MGk">
-                                <rect key="frame" x="45" y="497" width="69" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="画像選択">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="performChooseImageButton:" destination="5em-dB-6qK" eventType="touchUpInside" id="8Vx-Xp-pag"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" id="kaf-Ph-6g5">
-                                <rect key="frame" x="0.0" y="125" width="320" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wGp-23-26q">
-                                <rect key="frame" x="128" y="83" width="69" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -223,8 +234,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="StartButton" destination="EmG-ZE-Lm1" id="aVJ-gY-4lz"/>
-                        <outlet property="chooseImageButton" destination="DUe-2J-MGk" id="EFg-sv-Jr7"/>
                         <outlet property="mainView" destination="kaf-Ph-6g5" id="qsi-qG-5bx"/>
+                        <outlet property="startImageButton" destination="EmG-ZE-Lm1" id="muj-mM-czK"/>
                         <outlet property="timeLabel" destination="wGp-23-26q" id="2pb-xv-fPs"/>
                     </connections>
                 </viewController>
@@ -236,17 +247,19 @@
         <scene sceneID="0GK-i0-oYa">
             <objects>
                 <viewController id="qIA-HP-Bkn" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4MA-zZ-Gdn"/>
+                        <viewControllerLayoutGuide type="bottom" id="nAv-i9-f5L"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="joc-BQ-cBm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="6Q1-dm-q0G">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Q1-dm-q0G">
                                 <rect key="frame" x="0.0" y="117" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jkv-mI-H82">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jkv-mI-H82">
                                         <rect key="frame" x="-67" y="36" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -254,33 +267,29 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FRR-bp-zQW">
-                                <rect key="frame" x="34" y="458" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="画像選択">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="performChooseImageButton:" destination="qIA-HP-Bkn" eventType="touchUpInside" id="dlO-w6-3hL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FlU-XH-Zzr">
-                                <rect key="frame" x="212" y="458" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n7L-wm-lUW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phd-3K-mHz">
+                                        <rect key="frame" x="102" y="7" width="117" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44673713240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlU-XH-Zzr">
+                                <rect key="frame" x="108" y="487" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.38039215686274508" green="0.68627450980392157" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="スタート">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="performStartButtonAction:" destination="qIA-HP-Bkn" eventType="touchUpInside" id="fEF-S6-El4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あはは" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phd-3K-mHz">
-                                <rect key="frame" x="112" y="44" width="132" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -306,8 +315,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="StartButton" destination="FlU-XH-Zzr" id="7ru-2E-hfR"/>
-                        <outlet property="chooseImageButton" destination="FRR-bp-zQW" id="ofh-Qx-gSK"/>
                         <outlet property="mainView" destination="6Q1-dm-q0G" id="Gk6-Sq-cdz"/>
+                        <outlet property="start2ImageButton" destination="FlU-XH-Zzr" id="DCq-Yz-0zL"/>
                         <outlet property="timeLabel" destination="phd-3K-mHz" id="kgY-Mm-PgA"/>
                     </connections>
                 </viewController>
@@ -319,6 +328,10 @@
         <scene sceneID="cIl-3Y-q1R">
             <objects>
                 <viewController id="Vfi-ew-EEW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n11-X0-EfB"/>
+                        <viewControllerLayoutGuide type="bottom" id="rGS-De-fy1"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="osW-7k-lro">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -332,15 +345,33 @@
         <!--Choose View Controller-->
         <scene sceneID="pYf-sq-Vf5">
             <objects>
-                <viewController id="MuM-KJ-0bZ" customClass="ChooseViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="happyhappyme" id="MuM-KJ-0bZ" customClass="ChooseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Yn-Ux-nsy"/>
+                        <viewControllerLayoutGuide type="bottom" id="xcC-L8-Qf7"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8sG-b6-bhc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Afq-lU-Ftt">
-                                <rect key="frame" x="118" y="252" width="84" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="画像選択">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4d-rY-VB8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nB5-5c-QFj">
+                                        <rect key="frame" x="8" y="3" width="54" height="54"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5HL-6e-xIU">
+                                        <rect key="frame" x="268" y="13" width="44" height="44"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44673713235294116" green="0.73725490196078436" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afq-lU-Ftt">
+                                <rect key="frame" x="76" y="250" width="169" height="67"/>
+                                <color key="backgroundColor" red="0.44673713240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="画像を選ぶ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -351,35 +382,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZRe-dD-mCO"/>
+                    <connections>
+                        <outlet property="choseImageButton" destination="Afq-lU-Ftt" id="qWa-10-kvv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDh-vg-hgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-582" y="-731"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Zb8-ub-Id5">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tkU-G7-c4A" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3zj-bm-sub">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="3W3-7S-Hoq" kind="relationship" relationship="rootViewController" id="UBH-be-D2R"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nJG-gS-4p7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="362" y="-595"/>
         </scene>
     </scenes>
     <resources>
         <image name="3　３.png" width="500" height="173"/>
         <image name="4-4.png" width="500" height="173"/>
         <image name="5-5.png" width="500" height="173"/>
-        <image name="surapazu.png" width="907" height="1610"/>
+        <image name="MOJI.png" width="616" height="229"/>
+        <image name="te.png" width="1024" height="1024"/>
         <image name="戻る！！.png" width="1118" height="786"/>
         <image name="虫眼鏡.png" width="1417" height="1417"/>
     </resources>

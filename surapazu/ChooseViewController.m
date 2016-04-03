@@ -21,6 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //角丸
+    choseImageButton.layer.masksToBounds = true;
+    choseImageButton.layer.cornerRadius = 5;
     // Do any additional setup after loading the view.
 }
 
@@ -59,8 +63,8 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     //UIImagePickerControllerを閉じる
     [picker dismissViewControllerAnimated:YES completion:nil];
     
+    //
     firstViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"first"];
-    
     [self presentViewController:vc animated:YES completion:nil];
     
 }

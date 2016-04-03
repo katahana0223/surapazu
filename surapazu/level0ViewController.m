@@ -47,7 +47,9 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 {
     [super viewDidLoad];
     
-    
+    //角丸
+    startImageButton.layer.masksToBounds = true;
+    startImageButton.layer.cornerRadius = 5;
     // Do any additional setup after loading the view.
     //分割した画像を表示するためのビューを格納する配列
     //11
@@ -62,6 +64,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
         
         //配列に追加
         [pieceViews addObject:pieceView];
+        
     }
     
     self.pieceViews = pieceViews;

@@ -47,6 +47,10 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //角丸
+    start3ImageButton.layer.masksToBounds = true;
+    start3ImageButton.layer.cornerRadius = 5;
+
     // Do any additional setup after loading the view.
     //分割した画像を表示するためのビューを格納する配列
     //11

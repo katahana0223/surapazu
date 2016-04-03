@@ -34,6 +34,8 @@
 		2BD68CA81C74876700BC9438 /* 虫.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68CA71C74876700BC9438 /* 虫.png */; };
 		2BD68CAA1C74891A00BC9438 /* 虫眼鏡.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68CA91C74891A00BC9438 /* 虫眼鏡.png */; };
 		2BD68CAC1C748AB800BC9438 /* 戻る！！.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD68CAB1C748AB800BC9438 /* 戻る！！.png */; };
+		2BD9FC5C1CB0EF91003A0BBC /* te.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD9FC5B1CB0EF91003A0BBC /* te.png */; };
+		2BD9FC5E1CB0EFA8003A0BBC /* MOJI.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD9FC5D1CB0EFA8003A0BBC /* MOJI.png */; };
 		2E2A31AF1CB0DB30007595DD /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A31AE1CB0DB30007595DD /* StartViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		2BD68CA71C74876700BC9438 /* 虫.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "虫.png"; sourceTree = "<group>"; };
 		2BD68CA91C74891A00BC9438 /* 虫眼鏡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "虫眼鏡.png"; sourceTree = "<group>"; };
 		2BD68CAB1C748AB800BC9438 /* 戻る！！.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "戻る！！.png"; sourceTree = "<group>"; };
+		2BD9FC5B1CB0EF91003A0BBC /* te.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = te.png; sourceTree = "<group>"; };
+		2BD9FC5D1CB0EFA8003A0BBC /* MOJI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MOJI.png; sourceTree = "<group>"; };
 		2E2A31AD1CB0DB30007595DD /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		2E2A31AE1CB0DB30007595DD /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		6525E03758FC136B036598E4 /* Pods-surapazu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-surapazu.release.xcconfig"; path = "Pods/Target Support Files/Pods-surapazu/Pods-surapazu.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				2BD68C9D1C6B4F2500BC9438 /* 4-4.png */,
 				2BD68C9B1C6B4EBC00BC9438 /* 3　３.png */,
 				2B9F79231C4FAD08009FF8D9 /* icon.png */,
+				2BD9FC5B1CB0EF91003A0BBC /* te.png */,
+				2BD9FC5D1CB0EFA8003A0BBC /* MOJI.png */,
 				2BA28FD51B31832B0020EFE1 /* AppDelegate.h */,
 				2BA28FD61B31832B0020EFE1 /* AppDelegate.m */,
 				2E2A31AD1CB0DB30007595DD /* StartViewController.h */,
@@ -299,6 +305,7 @@
 				2BD68CA81C74876700BC9438 /* 虫.png in Resources */,
 				2BD68CAC1C748AB800BC9438 /* 戻る！！.png in Resources */,
 				2BD68C9C1C6B4EBC00BC9438 /* 3　３.png in Resources */,
+				2BD9FC5E1CB0EFA8003A0BBC /* MOJI.png in Resources */,
 				2BD68CAA1C74891A00BC9438 /* 虫眼鏡.png in Resources */,
 				2BD68CA01C6B4F3300BC9438 /* 5-5.png in Resources */,
 				2B9F79241C4FAD08009FF8D9 /* icon.png in Resources */,
@@ -306,6 +313,7 @@
 				2BA28FDF1B31832B0020EFE1 /* Images.xcassets in Resources */,
 				2BA28FD11B31832B0020EFE1 /* InfoPlist.strings in Resources */,
 				2BA28FDA1B31832B0020EFE1 /* Main.storyboard in Resources */,
+				2BD9FC5C1CB0EF91003A0BBC /* te.png in Resources */,
 				2BD68C9E1C6B4F2500BC9438 /* 4-4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +519,7 @@
 				INFOPLIST_FILE = "surapazu/surapazu-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = arm64;
 				WRAPPER_EXTENSION = app;
 			};
@@ -527,6 +536,7 @@
 				INFOPLIST_FILE = "surapazu/surapazu-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = arm64;
 				WRAPPER_EXTENSION = app;
 			};

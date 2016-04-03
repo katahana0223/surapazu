@@ -82,6 +82,7 @@ import UIKit
         sliderViewLabel.backgroundColor = sliderColor
         sliderViewLabel.font = sliderTextFont
         sliderViewLabel.text = sliderText
+        sliderViewLabel.textColor = sliderTextColor
         
         layer.cornerRadius = sliderCornerRadius
     }

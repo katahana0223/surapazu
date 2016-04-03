@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChooseViewController : UIViewController
+@interface ChooseViewController : UIViewController{
+    IBOutlet UIButton *choseImageButton;
+}
 
 @end
