@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2379CC235635BE33EDDB44E9'
-               BlueprintName = 'AURUnlockSlider-AURUnlockSlider'
+               BlueprintIdentifier = '63B9FC609C5EBB4E531B24C4'
+               BlueprintName = 'TKSwarmAlert'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'AURUnlockSlider.bundle'>
+               BuildableName = 'TKSwarmAlert.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

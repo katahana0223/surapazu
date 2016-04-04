@@ -1,10 +1,13 @@
 PODS:
   - AURUnlockSlider (0.1.1)
+  - TKSwarmAlert (0.0.4)
 
 DEPENDENCIES:
   - AURUnlockSlider
+  - TKSwarmAlert
 
 SPEC CHECKSUMS:
   AURUnlockSlider: 7e51989f52789f28608b0904c590347918cbaf40
+  TKSwarmAlert: 8fe22e7b9beec7e1e5d9506483e8f7c0272767eb
 
 COCOAPODS: 0.39.0
