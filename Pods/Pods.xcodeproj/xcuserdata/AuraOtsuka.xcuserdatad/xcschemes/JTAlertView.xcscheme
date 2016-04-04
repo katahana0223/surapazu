@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '63B9FC609C5EBB4E531B24C4'
-               BlueprintName = 'TKSwarmAlert'
+               BlueprintIdentifier = '4BBCCB038D34E912F5F384FE'
+               BlueprintName = 'JTAlertView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TKSwarmAlert.framework'>
+               BuildableName = 'JTAlertView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

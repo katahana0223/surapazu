@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'surapazu' do
 pod "AURUnlockSlider"
-pod 'TKSwarmAlert'
+pod 'JTAlertView'
 end
 
 target 'surapazuTests' do

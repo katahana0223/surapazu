@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F82F9FB1951E3BA4CB4800DC'
+               BlueprintIdentifier = '3DDEAFF74FF81F452360C431'
                BlueprintName = 'AURUnlockSlider'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'AURUnlockSlider.framework'>

@@ -85,9 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-surapazu/AURUnlockSlider.framework"
-  install_framework "Pods-surapazu/TKSwarmAlert.framework"
+  install_framework "Pods-surapazu/JTAlertView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-surapazu/AURUnlockSlider.framework"
-  install_framework "Pods-surapazu/TKSwarmAlert.framework"
+  install_framework "Pods-surapazu/JTAlertView.framework"
 fi

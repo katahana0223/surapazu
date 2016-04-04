@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-surapazu.xcscheme</key>
+		<key>JTAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TKSwarmAlert.xcscheme</key>
+		<key>Pods-surapazu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,12 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0E24F80FE2F52584B312241091F56AB0</key>
+		<key>38B43C6AD8430F23E2321A5F16A57C00</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0E7A654219B632488E97E750BF732D72</key>
+		<key>6C979548C63DDB15A4B91031727B0AD4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

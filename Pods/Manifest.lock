@@ -1,13 +1,13 @@
 PODS:
   - AURUnlockSlider (0.1.1)
-  - TKSwarmAlert (0.0.4)
+  - JTAlertView (1.0.2)
 
 DEPENDENCIES:
   - AURUnlockSlider
-  - TKSwarmAlert
+  - JTAlertView
 
 SPEC CHECKSUMS:
   AURUnlockSlider: 7e51989f52789f28608b0904c590347918cbaf40
-  TKSwarmAlert: 8fe22e7b9beec7e1e5d9506483e8f7c0272767eb
+  JTAlertView: 7fab8266a7d83447f16a41ff6778088182ef1475
 
 COCOAPODS: 0.39.0
