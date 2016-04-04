@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
+#import "ChooseViewController.h"
 
 static NSInteger const kNumberOfRows = 4;
 static NSInteger const kNumberOfColumns = 4;
@@ -42,6 +43,14 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
         // Custom initialization
     }
     return self;
+}
+
+-(IBAction)backbutton:(id)sender
+{
+    ChooseViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"happyhappyme"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+
 }
 
 - (void)viewDidLoad
