@@ -37,6 +37,9 @@
 		2BD9FC5C1CB0EF91003A0BBC /* te.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD9FC5B1CB0EF91003A0BBC /* te.png */; };
 		2BD9FC5E1CB0EFA8003A0BBC /* MOJI.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BD9FC5D1CB0EFA8003A0BBC /* MOJI.png */; };
 		2E2A31AF1CB0DB30007595DD /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A31AE1CB0DB30007595DD /* StartViewController.m */; };
+		2E3432831CB39BCD000BC59B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3432821CB39BCD000BC59B /* Launch Screen.storyboard */; };
+		2E3432851CB39C35000BC59B /* surapazu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E3432841CB39C35000BC59B /* surapazu.png */; };
+		2E3432891CB39D2B000BC59B /* tetete.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2E3432881CB39D2B000BC59B /* tetete.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		2BD9FC5D1CB0EFA8003A0BBC /* MOJI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MOJI.png; sourceTree = "<group>"; };
 		2E2A31AD1CB0DB30007595DD /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		2E2A31AE1CB0DB30007595DD /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		2E3432821CB39BCD000BC59B /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2E3432841CB39C35000BC59B /* surapazu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = surapazu.png; sourceTree = "<group>"; };
+		2E3432881CB39D2B000BC59B /* tetete.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetete.jpeg; sourceTree = "<group>"; };
 		6525E03758FC136B036598E4 /* Pods-surapazu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-surapazu.release.xcconfig"; path = "Pods/Target Support Files/Pods-surapazu/Pods-surapazu.release.xcconfig"; sourceTree = "<group>"; };
 		A92B6455ED20CF81F15EB102 /* Pods_surapazu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_surapazu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F880A44B6DFFEA58B7A208 /* Pods-surapazu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-surapazu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-surapazu/Pods-surapazu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +161,8 @@
 		2BA28FCC1B31832B0020EFE1 /* surapazu */ = {
 			isa = PBXGroup;
 			children = (
+				2E3432841CB39C35000BC59B /* surapazu.png */,
+				2E3432881CB39D2B000BC59B /* tetete.jpeg */,
 				2BD68CAB1C748AB800BC9438 /* 戻る！！.png */,
 				2BD68CA91C74891A00BC9438 /* 虫眼鏡.png */,
 				2BD68CA71C74876700BC9438 /* 虫.png */,
@@ -178,6 +186,7 @@
 				2BA28FDC1B31832B0020EFE1 /* ViewController.m */,
 				2BA460161BFC773B00966C5C /* level2ViewController.h */,
 				2BA460171BFC773B00966C5C /* level2ViewController.m */,
+				2E3432821CB39BCD000BC59B /* Launch Screen.storyboard */,
 				2BA28FD81B31832B0020EFE1 /* Main.storyboard */,
 				2BA28FDE1B31832B0020EFE1 /* Images.xcassets */,
 				2BA28FCD1B31832B0020EFE1 /* Supporting Files */,
@@ -308,8 +317,11 @@
 				2BD9FC5E1CB0EFA8003A0BBC /* MOJI.png in Resources */,
 				2BD68CAA1C74891A00BC9438 /* 虫眼鏡.png in Resources */,
 				2BD68CA01C6B4F3300BC9438 /* 5-5.png in Resources */,
+				2E3432851CB39C35000BC59B /* surapazu.png in Resources */,
+				2E3432831CB39BCD000BC59B /* Launch Screen.storyboard in Resources */,
 				2B9F79241C4FAD08009FF8D9 /* icon.png in Resources */,
 				2BD68C9A1C6A0AAF00BC9438 /* surapazu.png in Resources */,
+				2E3432891CB39D2B000BC59B /* tetete.jpeg in Resources */,
 				2BA28FDF1B31832B0020EFE1 /* Images.xcassets in Resources */,
 				2BA28FD11B31832B0020EFE1 /* InfoPlist.strings in Resources */,
 				2BA28FDA1B31832B0020EFE1 /* Main.storyboard in Resources */,
@@ -471,7 +483,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -518,9 +530,10 @@
 				GCC_PREFIX_HEADER = "surapazu/surapazu-Prefix.pch";
 				INFOPLIST_FILE = "surapazu/surapazu-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = arm64;
+				VALID_ARCHS = "arm64 armv7s armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -535,9 +548,10 @@
 				GCC_PREFIX_HEADER = "surapazu/surapazu-Prefix.pch";
 				INFOPLIST_FILE = "surapazu/surapazu-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = arm64;
+				VALID_ARCHS = "arm64 armv7s armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

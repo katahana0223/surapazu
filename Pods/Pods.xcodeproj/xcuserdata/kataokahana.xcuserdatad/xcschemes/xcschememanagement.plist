@@ -14,14 +14,34 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>JTAlertView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Pods-surapazu.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>TKSwarmAlert.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>38B43C6AD8430F23E2321A5F16A57C00</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C979548C63DDB15A4B91031727B0AD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BC3630DE0C0459591CFE9425E21AE491</key>
 		<dict>
 			<key>primary</key>
