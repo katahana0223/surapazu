@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
-#import "ChooseViewController.h"
+#import "firstViewController.h"
+#import "JTAlertView.h"
+#import "StartViewController.h"
 
 static NSInteger const kNumberOfRows = 4;
 static NSInteger const kNumberOfColumns = 4;
@@ -45,12 +47,29 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     return self;
 }
 
+-(IBAction)musibutton:(id)sender
+{
+    AppDelegate *appDelegete = [[UIApplication sharedApplication] delegate];
+    UIImage *sampleImage = appDelegete.selectedImage;
+    
+    JTAlertView *alertView = [[JTAlertView alloc] initWithTitle:@"" andImage:sampleImage];
+    alertView.size = CGSizeMake(280, 280);
+    alertView.backgroundShadow = false;
+    alertView.titleShadow = false;
+    alertView.overlayColor = [UIColor clearColor];
+    
+    [alertView addButtonWithTitle:@"OK" style:JTAlertViewStyleDefault action:^(JTAlertView *alertView) {
+        [alertView hide];
+    }];
+    
+    [alertView show];
+}
+
 -(IBAction)backbutton:(id)sender
 {
-    ChooseViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"happyhappyme"];
-    [self presentViewController:vc animated:YES completion:nil];
+// 戻る動作    
+    [self dismissViewControllerAnimated:true completion:nil];
     
-
 }
 
 - (void)viewDidLoad
@@ -59,7 +78,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     //角丸
     start2ImageButton.layer.masksToBounds = true;
     start2ImageButton.layer.cornerRadius = 5;
-
+    
     // Do any additional setup after loading the view.
     //分割した画像を表示するためのビューを格納する配列
     //11
@@ -89,10 +108,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 //⑦
 - (void)giveMeImage{
     AppDelegate *appDelegete = [[UIApplication sharedApplication] delegate];
- 
-    
     UIImage *image = appDelegete.selectedImage;
-    NSLog(appDelegete.selectedImage.description);
     self.imageView.image = image;
     
     //分割したピースの幅と高さを計算
@@ -105,6 +121,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
         CGFloat x = (i % kNumberOfColumns) * width;
         CGFloat y = (i / kNumberOfColumns) * height;
         CGRect rect = CGRectMake(x, y, width, height);
+        NSLog(@"%f %f¥n",x,y);
         
         //画像を切り出す(クラス内に書くパターン)
         UIImage *croppedImage = [self cutImage:image withRect:rect];
@@ -180,6 +197,8 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
                                                 selector:@selector(updateTimeLabel)
                                                 userInfo:nil
                                                  repeats:YES];
+    
+    start2ImageButton.hidden = true;
 }
 
 
@@ -338,9 +357,6 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
         [self movePieceFromPoint:point withAnimation:YES];
         
         if([self isSolved]) {
-            [self.timer invalidate];
-            self.timer = nil;
-            
             self.imageView.hidden = NO;
             [UIView animateWithDuration:0.5f animations:^{
                 
@@ -349,11 +365,24 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
                 NSString *title = @"ゲームクリア！";
                 NSString *message = [NSString stringWithFormat:
                                      @"タイムは %@ です", self.timeLabel.text];
-                [[[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+                [[[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
             }];
+            
+            [self.timer invalidate];
+            self.timer = nil;
             
         }
     }
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex{
+    StartViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"startstart"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+
+    
 }
 @end
 

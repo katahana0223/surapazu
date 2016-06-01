@@ -8,11 +8,13 @@
 
 #import "level2ViewController.h"
 #import "AppDelegate.h"
-#import "ChooseViewController.h"
+#import "firstViewController.h"
+#import "JTAlertView.h"
+#import "StartViewController.h"
 
-static NSInteger const kNumberOfRows = 5;
-static NSInteger const kNumberOfColumns = 5;
-static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
+static NSInteger const kNumberOfRows1 = 5;
+static NSInteger const kNumberOfColumns1 = 5;
+static NSInteger const kNumberOfPieces1 = kNumberOfColumns1 * kNumberOfRows1 - 1;
 
 
 @interface level2ViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -46,10 +48,27 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 }
 -(IBAction)backbutton:(id)sender
 {
-    ChooseViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"happyhappyme"];
-    [self presentViewController:vc animated:YES completion:nil];
+    [self dismissViewControllerAnimated:true completion:nil];
+
     
+}
+-(IBAction)musibutton:(id)sender
+{
+    AppDelegate *appDelegete = [[UIApplication sharedApplication] delegate];
+    UIImage *sampleImage = appDelegete.selectedImage;
     
+    JTAlertView *alertView = [[JTAlertView alloc] initWithTitle:@"" andImage:sampleImage];
+    alertView.size = CGSizeMake(280, 280);
+    alertView.backgroundShadow = false;
+    alertView.titleShadow = false;
+    alertView.overlayColor = [UIColor clearColor];
+    
+    [alertView addButtonWithTitle:@"OK" style:JTAlertViewStyleDefault action:^(JTAlertView *alertView) {
+        [alertView hide];
+    }];
+    
+    [alertView show];
+
 }
 
 - (void)viewDidLoad
@@ -63,7 +82,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     //分割した画像を表示するためのビューを格納する配列
     //11
     NSMutableArray *pieceViews = [NSMutableArray array];
-    for (NSInteger i = 0; i < kNumberOfPieces; i++) {
+    for (NSInteger i = 0; i < kNumberOfPieces1; i++) {
         
         //UIImageViewのインスタンスを作成
         UIImageView *pieceView = [[UIImageView alloc] init];
@@ -96,15 +115,18 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     self.imageView.image = image;
     
     //分割したピースの幅と高さを計算
-    CGFloat width = image.size.width / kNumberOfColumns;
-    CGFloat height = image.size.height / kNumberOfRows;
+    CGFloat width = image.size.width / kNumberOfColumns1;
+    CGFloat height = image.size.height / kNumberOfRows1;
     
-    for (NSInteger i = 0; i < kNumberOfPieces; i++) {
+    NSLog(@"colum:%d row:%d",kNumberOfColumns1,kNumberOfRows1);
+    
+    for (NSInteger i = 0; i < kNumberOfPieces1; i++) {
         //画像を切り出す為の矩形情報を計算
         //12
-        CGFloat x = (i % kNumberOfColumns) * width;
-        CGFloat y = (i / kNumberOfColumns) * height;
+        CGFloat x = (i % kNumberOfColumns1) * width;
+        CGFloat y = (i / kNumberOfColumns1) * height;
         CGRect rect = CGRectMake(x, y, width, height);
+        NSLog(@"%f %f",x,y);
         
         //画像を切り出す(クラス内に書くパターン)
         UIImage *croppedImage = [self cutImage:image withRect:rect];
@@ -125,7 +147,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
         pieceView.frame = self.imageView.frame;
     }
     
-    self.PointOfBlank=CGPointMake(kNumberOfColumns - 1,kNumberOfColumns);
+    self.PointOfBlank=CGPointMake(kNumberOfColumns1 - 1,kNumberOfColumns1);
     self.StartButton.hidden = NO;
     
     //UIImagePickerControllerを閉じる
@@ -161,7 +183,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     srand (time(0) );
     //ランダムにピースを動かす
     for (NSInteger i = 0; i < 100; i++) {
-        NSInteger index = rand() % kNumberOfPieces;
+        NSInteger index = rand() % kNumberOfPieces1;
         CGPoint point = [self pointFromIndex:index];
         [self movePieceFromPoint:point withAnimation:NO];
     }
@@ -178,6 +200,8 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
                                                 selector:@selector(updateTimeLabel)
                                                 userInfo:nil
                                                  repeats:YES];
+    
+    start3ImageButton.hidden = true;
 }
 
 
@@ -199,7 +223,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 
 -(BOOL)isSolved
 {
-    for(NSInteger i = 0; i < kNumberOfPieces; i++){
+    for(NSInteger i = 0; i < kNumberOfPieces1; i++){
         UIImageView *pieceView = self.pieceViews[i];
         if(i != pieceView.tag)
             return NO;
@@ -228,20 +252,20 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 //13
 -(CGPoint)pointFromIndex:(NSInteger)index
 {
-    return CGPointMake(index % kNumberOfColumns,index / kNumberOfColumns);
+    return CGPointMake(index % kNumberOfColumns1,index / kNumberOfColumns1);
 }
 
 -(NSInteger)indexFromPoint:(CGPoint)point
 {
-    return point.y * kNumberOfColumns + point.x;
+    return point.y * kNumberOfColumns1 + point.x;
     
 }
 
 -(CGRect)pieceFrameAtIndex:(NSInteger)index
 {
     CGPoint point = [self pointFromIndex:index];
-    CGFloat width = self.mainView.frame.size.width / kNumberOfColumns;
-    CGFloat height = self.mainView.frame.size.width / kNumberOfRows;
+    CGFloat width = self.mainView.frame.size.width / kNumberOfColumns1;
+    CGFloat height = self.mainView.frame.size.width / kNumberOfRows1;
     return CGRectMake(point.x * width,point.y * height, width, height);
 }
 //⑧
@@ -269,7 +293,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     //移動方向を決定する
     NSInteger step;
     if (self.pointOfBlank.x == point.x)
-        step = self.pointOfBlank.y > point.y ? kNumberOfColumns : -kNumberOfColumns;
+        step = self.pointOfBlank.y > point.y ? kNumberOfColumns1 : -kNumberOfColumns1;
     else
         step = self.pointOfBlank.x > point.x ? 1 : -1;
     
@@ -308,7 +332,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 
 - (CGPoint)pointFromIndexpointFromIndex:(NSInteger)index
 {
-    return CGPointMake(index % kNumberOfColumns, index / kNumberOfColumns);
+    return CGPointMake(index % kNumberOfColumns1, index / kNumberOfColumns1);
 }
 
 - (BOOL)isPlaying
@@ -328,18 +352,15 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     //タッチ座標がmain
     if (CGRectContainsPoint(self.mainView.bounds, location)){
         //タッチ座標かr
-        CGFloat width = self.mainView.frame.size.width / kNumberOfColumns;
-        CGFloat height = self.mainView.frame.size.width / kNumberOfColumns;
+        CGFloat width = self.mainView.frame.size.width / kNumberOfColumns1;
+        CGFloat height = self.mainView.frame.size.width / kNumberOfColumns1;
         CGPoint point = CGPointMake((int)(location.x / width), (int)(location.y / height));
         
         
         [self movePieceFromPoint:point withAnimation:YES];
         
         if([self isSolved]) {
-            [self.timer invalidate];
-            self.timer = nil;
-            
-            self.imageView.hidden = NO;
+                      self.imageView.hidden = NO;
             [UIView animateWithDuration:0.5f animations:^{
                 
                 self.imageView.alpha = 1;
@@ -347,11 +368,23 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
                 NSString *title = @"ゲームクリア！";
                 NSString *message = [NSString stringWithFormat:
                                      @"タイムは %@ です", self.timeLabel.text];
-                [[[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+                [[[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
             }];
+            [self.timer invalidate];
+            self.timer = nil;
             
+
         }
     }
+}
+-(void)alertView:(UIAlertView *)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex{
+    StartViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"startstart"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    
+
+    
 }
 
 @end

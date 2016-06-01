@@ -7,6 +7,7 @@
 //
 
 #import "firstViewController.h"
+#import "ChooseViewController.h"
 
 @interface firstViewController ()
 
@@ -14,10 +15,18 @@
 
 @implementation firstViewController
 
+-(IBAction)backbutton:(id)sender
+{
+    ChooseViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"happyhappyme"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+
     //3つのボタンの背景に使う色
     UIColor *color = [UIColor colorWithRed:116/255.0 green:186/255.0 blue:208/155.0 alpha:1.0];
     

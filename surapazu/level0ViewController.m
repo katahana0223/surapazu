@@ -8,7 +8,9 @@
 
 #import "level0ViewController.h"
 #import "AppDelegate.h"
-#import "ChooseViewController.h"
+#import "firstViewController.h"
+#import "JTAlertView.h"
+#import "StartViewController.h"
 static NSInteger const kNumberOfRows = 3;
 static NSInteger const kNumberOfColumns = 3;
 static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
@@ -45,12 +47,27 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 }
 -(IBAction)backbutton:(id)sender
 {
-    ChooseViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"happyhappyme"];
-    [self presentViewController:vc animated:YES completion:nil];
-    
-    
-}
+    [self dismissViewControllerAnimated:true completion:nil];
 
+}
+-(IBAction)musibutton:(id)sender
+{
+    AppDelegate *appDelegete = [[UIApplication sharedApplication] delegate];
+    UIImage *sampleImage = appDelegete.selectedImage;
+    
+    JTAlertView *alertView = [[JTAlertView alloc] initWithTitle:@"" andImage:sampleImage];
+    alertView.size = CGSizeMake(280, 280);
+    alertView.backgroundShadow = false;
+    alertView.titleShadow = false;
+    alertView.overlayColor = [UIColor clearColor];
+    
+    [alertView addButtonWithTitle:@"OK" style:JTAlertViewStyleDefault action:^(JTAlertView *alertView) {
+        [alertView hide];
+    }];
+    
+    [alertView show];
+
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -177,6 +194,8 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
                                                 selector:@selector(updateTimeLabel)
                                                 userInfo:nil
                                                  repeats:YES];
+    
+    startImageButton.hidden = true;
 }
 
 
@@ -349,13 +368,19 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
                 NSString *title = @"ゲームクリア！";
                 NSString *message = [NSString stringWithFormat:
                                      @"タイムは %@ です", self.timeLabel.text];
-                [[[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+                [[[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
             }];
-            
+            [self.timer invalidate];
+            self.timer = nil;
+
         }
     }
 }
-
+-(void)alertView:(UIAlertView *)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex{
+    StartViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"startstart"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end
 
