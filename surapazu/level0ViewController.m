@@ -83,6 +83,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
         
         //UIImageViewのインスタンスを作成
         UIImageView *pieceView = [[UIImageView alloc] init];
+        pieceView.contentMode = UIViewContentModeScaleAspectFit;
         
         //mainViewのサブビューとして追加
         [self.mainView addSubview:pieceView];
@@ -95,12 +96,20 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     self.pieceViews = pieceViews;
     
     //④
+    _mainView.contentMode = UIViewContentModeScaleAspectFit;
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.mainView.bounds];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.mainView addSubview:imageView];
     self.imageView = imageView;
     
-    [self giveMeImage];
+
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self giveMeImage];    
+}
+
+
 
 - (void)giveMeImage{
     AppDelegate *appDelegete = [[UIApplication sharedApplication] delegate];
@@ -111,8 +120,10 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     self.imageView.image = image;
     
     //分割したピースの幅と高さを計算
-    CGFloat width = image.size.width / kNumberOfColumns;
-    CGFloat height = image.size.height / kNumberOfRows;
+    //CGFloat width = image.size.width / kNumberOfColumns;
+    //CGFloat height = image.size.height / kNumberOfRows;
+    CGFloat width = self.mainView.frame.size.width / kNumberOfColumns;
+    CGFloat height = self.imageView.bounds.size.width / kNumberOfRows;
     
     for (NSInteger i = 0; i < kNumberOfPieces; i++) {
         //画像を切り出す為の矩形情報を計算
@@ -136,8 +147,9 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
         
         //ビューの現在位置の表すインデックスをタグをして保持
         pieceView.tag = i;
+        pieceView.hidden =YES;
         
-        pieceView.frame = self.imageView.frame;
+        
     }
     
     self.PointOfBlank=CGPointMake(kNumberOfColumns - 1,kNumberOfColumns);
@@ -167,6 +179,10 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     //手前の画像をフェードアウト
     [UIView animateWithDuration:0.5f animations:^{
         //ビューのalpha値をアニメーションさせる事でフェードアウトする
+        for (UIImageView *pieceView in self.pieceViews){
+            pieceView.hidden = NO;
+        }
+        
         self.imageView.alpha = 0;
     } completion:^(BOOL finished) {
         //フェードアウトのアニメーション完了後に隠す
@@ -196,6 +212,8 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
                                                  repeats:YES];
     
     startImageButton.hidden = true;
+    
+    
 }
 
 
@@ -259,7 +277,7 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
 {
     CGPoint point = [self pointFromIndex:index];
     CGFloat width = self.mainView.frame.size.width / kNumberOfColumns;
-    CGFloat height = self.mainView.frame.size.width / kNumberOfRows;
+    CGFloat height = self.imageView.bounds.size.width / kNumberOfRows;
     return CGRectMake(point.x * width,point.y * height, width, height);
 }
 //⑧

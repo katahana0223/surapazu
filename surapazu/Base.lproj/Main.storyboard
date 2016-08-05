@@ -50,8 +50,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5O-hs-Uoi">
-                                <rect key="frame" x="46" y="245" width="229" height="78"/>
-                                <state key="normal" title="２" image="4-4.png">
+                                <rect key="frame" x="58" y="241" width="205" height="70"/>
+                                <state key="normal" title="２" image="4kakeru44.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -59,8 +59,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYk-s2-Goo">
-                                <rect key="frame" x="46" y="106" width="228" height="78"/>
-                                <state key="normal" title="１" image="3　３.png">
+                                <rect key="frame" x="58" y="114" width="205" height="70"/>
+                                <state key="normal" title="１" image="3kakeru3.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -71,18 +71,18 @@
                                 <rect key="frame" x="-4" y="0.0" width="328" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPN-Cc-XN5">
-                                        <rect key="frame" x="8" y="12" width="45" height="35"/>
-                                        <state key="normal" title="Button" image="戻る！！.png"/>
+                                        <rect key="frame" x="8" y="22" width="36" height="30"/>
+                                        <state key="normal" image="howaiho.png"/>
                                         <connections>
                                             <action selector="backbutton:" destination="3W3-7S-Hoq" eventType="touchUpInside" id="mBA-AL-DTn"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.44705882352941173" green="0.73725490196078436" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.50588235294117645" green="0.83137254901960778" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYe-TR-Cci">
-                                <rect key="frame" x="46" y="385" width="228" height="78"/>
-                                <state key="normal" image="5-5.png">
+                                <rect key="frame" x="58" y="375" width="205" height="70"/>
+                                <state key="normal" image="5kakeru55.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -110,20 +110,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X87-Me-xkS">
-                                <rect key="frame" x="-4" y="85" width="328" height="328"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhv-Vf-Num">
-                                        <rect key="frame" x="-67" y="36" width="46" height="30"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Saa-h8-6TI">
-                                <rect key="frame" x="96" y="443" width="128" height="50"/>
+                                <rect key="frame" x="100" y="480" width="128" height="50"/>
                                 <color key="backgroundColor" red="0.38039215686274508" green="0.68627450980392157" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="スタート">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -137,28 +125,40 @@
                                 <rect key="frame" x="-4" y="0.0" width="328" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxh-1d-ovL">
-                                        <rect key="frame" x="8" y="17" width="45" height="35"/>
-                                        <state key="normal" title="Button" image="back.png"/>
+                                        <rect key="frame" x="8" y="22" width="36" height="30"/>
+                                        <state key="normal" image="howaiho.png"/>
                                         <connections>
                                             <action selector="backbutton:" destination="dWe-E7-1Vb" eventType="touchUpInside" id="5nF-E6-mjP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77P-Vc-kcJ">
-                                        <rect key="frame" x="277" y="17" width="35" height="35"/>
-                                        <state key="normal" title="Button" image="探しちゃお.png"/>
+                                        <rect key="frame" x="279" y="22" width="36" height="30"/>
+                                        <state key="normal" image="mumusisi.png"/>
                                         <connections>
                                             <action selector="musibutton:" destination="dWe-E7-1Vb" eventType="touchUpInside" id="1dy-g9-iS4"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjP-w5-QVj">
-                                        <rect key="frame" x="96" y="11" width="137" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.44673713240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X87-Me-xkS">
+                                <rect key="frame" x="-4" y="120" width="328" height="328"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhv-Vf-Num">
+                                        <rect key="frame" x="-67" y="36" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjP-w5-QVj">
+                                <rect key="frame" x="91" y="68" width="137" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -205,8 +205,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-su-Nxb">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-tf-Aa6">
+                                        <rect key="frame" x="279" y="22" width="36" height="30"/>
+                                        <state key="normal" image="mumusisi.png"/>
+                                        <connections>
+                                            <action selector="musibutton:" destination="5em-dB-6qK" eventType="touchUpInside" id="VHV-Op-zgV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2m9-dC-V4h">
+                                        <rect key="frame" x="8" y="22" width="36" height="30"/>
+                                        <state key="normal" image="howaiho.png"/>
+                                        <connections>
+                                            <action selector="backbutton:" destination="5em-dB-6qK" eventType="touchUpInside" id="LJk-Ai-Nfl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44673713240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaf-Ph-6g5">
+                                <rect key="frame" x="-4" y="130" width="328" height="308"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmG-ZE-Lm1">
-                                <rect key="frame" x="96" y="423" width="128" height="50"/>
+                                <rect key="frame" x="100" y="480" width="128" height="50"/>
                                 <color key="backgroundColor" red="0.38039215686274508" green="0.68627450980392157" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="スタート">
@@ -216,36 +240,12 @@
                                     <action selector="performStartButtonAction:" destination="5em-dB-6qK" eventType="touchUpInside" id="dBU-3W-ing"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-su-Nxb">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-tf-Aa6">
-                                        <rect key="frame" x="278" y="14" width="35" height="35"/>
-                                        <state key="normal" title="Button" image="虫眼鏡.png"/>
-                                        <connections>
-                                            <action selector="musibutton:" destination="5em-dB-6qK" eventType="touchUpInside" id="VHV-Op-zgV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2m9-dC-V4h">
-                                        <rect key="frame" x="8" y="14" width="45" height="35"/>
-                                        <state key="normal" title="Button" image="戻る！！.png"/>
-                                        <connections>
-                                            <action selector="backbutton:" destination="5em-dB-6qK" eventType="touchUpInside" id="LJk-Ai-Nfl"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ5-cH-dnO">
-                                        <rect key="frame" x="96" y="11" width="137" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.44673713240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaf-Ph-6g5">
-                                <rect key="frame" x="-4" y="85" width="328" height="308"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ5-cH-dnO">
+                                <rect key="frame" x="92" y="74" width="137" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -292,8 +292,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYt-NG-fan">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-6h-yYm">
+                                        <rect key="frame" x="8" y="22" width="36" height="30"/>
+                                        <state key="normal" image="howaiho.png"/>
+                                        <connections>
+                                            <action selector="backbutton:" destination="qIA-HP-Bkn" eventType="touchUpInside" id="Ldh-yK-Efu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CB-1w-0ld">
+                                        <rect key="frame" x="279" y="22" width="36" height="30"/>
+                                        <state key="normal" image="mumusisi.png"/>
+                                        <connections>
+                                            <action selector="musibutton:" destination="qIA-HP-Bkn" eventType="touchUpInside" id="VwR-6K-RYy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44673713240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlU-XH-Zzr">
+                                <rect key="frame" x="100" y="480" width="128" height="50"/>
+                                <color key="backgroundColor" red="0.38039215686274508" green="0.68627450980392157" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="スタート">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performStartButtonAction:" destination="qIA-HP-Bkn" eventType="touchUpInside" id="fEF-S6-El4"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Q1-dm-q0G">
-                                <rect key="frame" x="-4" y="85" width="328" height="320"/>
+                                <rect key="frame" x="0.0" y="124" width="328" height="320"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jkv-mI-H82">
                                         <rect key="frame" x="-67" y="36" width="46" height="30"/>
@@ -304,43 +335,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYt-NG-fan">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CB-1w-0ld">
-                                        <rect key="frame" x="277" y="17" width="35" height="35"/>
-                                        <state key="normal" title="Button" image="虫眼鏡.png"/>
-                                        <connections>
-                                            <action selector="musibutton:" destination="qIA-HP-Bkn" eventType="touchUpInside" id="VwR-6K-RYy"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-6h-yYm">
-                                        <rect key="frame" x="8" y="14" width="45" height="35"/>
-                                        <state key="normal" title="Button" image="戻る！！.png"/>
-                                        <connections>
-                                            <action selector="backbutton:" destination="qIA-HP-Bkn" eventType="touchUpInside" id="Ldh-yK-Efu"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUh-xj-aSi">
-                                        <rect key="frame" x="96" y="14" width="137" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.44673713240000001" green="0.73725490199999999" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlU-XH-Zzr">
-                                <rect key="frame" x="96" y="435" width="128" height="50"/>
-                                <color key="backgroundColor" red="0.38039215686274508" green="0.68627450980392157" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="スタート">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="performStartButtonAction:" destination="qIA-HP-Bkn" eventType="touchUpInside" id="fEF-S6-El4"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUh-xj-aSi">
+                                <rect key="frame" x="92" y="68" width="137" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -435,14 +435,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3　３.png" width="500" height="173"/>
-        <image name="4-4.png" width="500" height="173"/>
-        <image name="5-5.png" width="500" height="173"/>
+        <image name="3kakeru3.png" width="228" height="78"/>
+        <image name="4kakeru44.png" width="228" height="78"/>
+        <image name="5kakeru55.png" width="228" height="78"/>
         <image name="MOJI.png" width="616" height="229"/>
-        <image name="back.png" width="45" height="35"/>
+        <image name="howaiho.png" width="30" height="30"/>
+        <image name="mumusisi.png" width="30" height="30"/>
         <image name="te.png" width="1024" height="1024"/>
         <image name="戻る！！.png" width="1118" height="786"/>
-        <image name="探しちゃお.png" width="45" height="35"/>
         <image name="虫眼鏡.png" width="1417" height="1417"/>
     </resources>
     <color key="tintColor" red="1" green="0.78960991120000001" blue="0.94410527300000002" alpha="1" colorSpace="calibratedRGB"/>

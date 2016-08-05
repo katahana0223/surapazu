@@ -93,9 +93,13 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
         
         //配列に追加
         [pieceViews addObject:pieceView];
+
     }
     
     self.pieceViews = pieceViews;
+    for (UIImageView *pieceView in self.pieceViews){
+        pieceView.hidden = YES;
+    }
     
     //④
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.mainView.bounds];
@@ -139,7 +143,6 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
         //ビューの現在位置の表すインデックスをタグをして保持
         pieceView.tag = i;
         
-        pieceView.frame = self.imageView.frame;
     }
     
     self.PointOfBlank=CGPointMake(kNumberOfColumns - 1,kNumberOfColumns);
@@ -171,6 +174,9 @@ static NSInteger const kNumberOfPieces = kNumberOfColumns * kNumberOfRows - 1;
     [UIView animateWithDuration:0.5f animations:^{
         //ビューのalpha値をアニメーションさせる事でフェードアウトする
         self.imageView.alpha = 0;
+        for (UIImageView *pieceView in self.pieceViews){
+            pieceView.hidden = NO;
+        }
     } completion:^(BOOL finished) {
         //フェードアウトのアニメーション完了後に隠す
         self.imageView.hidden = YES;
